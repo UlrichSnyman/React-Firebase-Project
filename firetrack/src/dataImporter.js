@@ -15,7 +15,7 @@ function DataImporter() {
     
     console.log("Starting import for user:", currentUser.uid);
 
-    // This is important: prevent accidental double-imports
+    // Prevent accidental double-imports by confirming with the user
     const confirmed = window.confirm("Are you sure you want to import projects? This can create duplicates.");
     if (!confirmed) return;
 
